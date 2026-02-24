@@ -73,13 +73,15 @@ export default {
       </div>
     </nav>
 
-    <main class="content">
-      <!-- HERO SECTION -->
+   <!-- HERO SECTION -->
       <header class="hero">
         <div class="hero-flex-container">
+          <!-- Profile Picture Box -->
           <div class="profile-frame">
-            <img src="/images/4.jpg" alt="Terrence Josh" class="profile-img" />
+            <img src="/images/6.jpg" alt="Terrence Josh" class="profile-img" />
           </div>
+
+          <!-- Text Content Box -->
           <div class="hero-text-content">
             <h1 class="name-title">Terrence Josh Q. Corpuz</h1>
             <p class="description">
@@ -88,9 +90,25 @@ export default {
               I’m passionate about web development, design, and building clean, 
               functional digital experiences. I like playing Volleyball and any physical activities.
             </p>
-          </div>
-        </div>
-      </header>
+
+            <!-- NEW SOCIAL LINKS -->
+            <div class="social-links-row">
+              <a href="https://www.facebook.com/terrence.josh.corpuz.2024/" target="_blank" class="social-icon fb">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/terrence-corpuz-corpuz-a3860a342/" target="_blank" class="social-icon li">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/terrencejuice/" target="_blank" class="social-icon ig">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new" class="social-icon gm">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div> <!-- Closes hero-text-content -->
+        </div> <!-- Closes hero-flex-container -->
+      </header> <!-- Closes hero -->
 
       <!-- INFO GRID -->
       <section id="about" class="info-grid">
@@ -159,10 +177,22 @@ export default {
           </div>
         </div>
       </section>
-    </main>
+    
 
-    <footer>
-      <p>© 2026 Terrence Josh Q. Corpuz</p>
+    
+      <footer class="footer-section"> 
+       <p>© 2026 Terrence Josh Q. Corpuz</p>
+      <div class="footer-links">
+        <span class="footer-label">Learning Resources & Tools:</span>
+        <div class="reference-grid">
+          <a href="https://aistudio.google.com/" target="_blank" class="ref-chip">Google Studio AI</a>
+          <a href="https://www.w3schools.com/" target="_blank" class="ref-chip">W3Schools</a>
+          <a href="https://supabase.com/docs/reference/javascript/introduction" target="_blank" class="ref-chip">Supabase API</a>
+          <a href="https://nextjs.org/docs" target="_blank" class="ref-chip">Next.js Docs</a>
+        </div>
+      </div>
+      
+      <p class="copyright">© 2026 Terrence Josh Q. Corpuz • Built with Vue & Supabase</p>
     </footer>
   </div>
 </template>

@@ -128,3 +128,115 @@ input:focus, textarea:focus { border-color: var(--text-secondary); background: v
   .profile-frame { margin: 0 auto; }
   .description { margin: 0 auto; }
 }
+
+/* SOCIAL LINKS ROW */
+.social-links-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 15px; /* Cute rounded corners */
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: var(--pop-transition); /* Uses your existing pop curve */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+/* HOVER ANIMATIONS (The "Pop") */
+.social-icon:hover {
+  transform: translateY(-8px) scale(1.15) rotate(5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  background: var(--text-primary);
+  color: var(--bg); /* Flips colors for a cute effect */
+  border-color: transparent;
+}
+
+/* CLICK ANIMATION (The "Squish") */
+.social-icon:active {
+  transform: scale(0.9) rotate(0deg);
+  transition: 0.1s; /* Fast squish */
+}
+
+/* Individual Icon Colors on Hover (Optional - for extra cuteness) */
+.social-icon.fb:hover { color: #1877F2; background: #fff; }
+.social-icon.li:hover { color: #0077B5; background: #fff; }
+.social-icon.ig:hover { color: #E4405F; background: #fff; }
+.social-icon.gm:hover { color: #DB4437; background: #fff; }
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .social-links-row {
+    justify-content: center;
+  }
+}
+
+/* FOOTER & REFERENCE LINKS */
+.footer-section {
+  padding: 80px 0 40px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.reference-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.ref-chip {
+  text-decoration: none;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: var(--pop-transition);
+}
+
+/* Hover Animation for the Footer Links */
+.ref-chip:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: var(--text-primary);
+  color: var(--bg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Responsive fix for footer */
+@media (max-width: 600px) {
+  .reference-grid {
+    gap: 8px;
+  }
+  .ref-chip {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+}
